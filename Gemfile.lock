@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/chef/chef-server
-  revision: 96c04f9941f96c8be993b7103a0deb221f054120
+  revision: 632b74827b9ed29c36bdcc026d6b1a5447f5d292
   specs:
     oc-chef-pedant (2.2.0)
       activesupport (>= 4.2.7.1, < 6.0)
@@ -65,7 +65,7 @@ PATH
       net-sftp (~> 2.1, >= 2.1.2)
       net-ssh (>= 2.9, < 5.0)
       net-ssh-multi (~> 1.1)
-      ohai (>= 8.6.0.alpha.1, < 9)
+      ohai (>= 8.6.0.alpha.1, < 13)
       plist (~> 3.2)
       proxifier (~> 1.0)
       rspec-core (~> 3.5)
@@ -95,7 +95,7 @@ PATH
       net-sftp (~> 2.1, >= 2.1.2)
       net-ssh (>= 2.9, < 5.0)
       net-ssh-multi (~> 1.1)
-      ohai (>= 8.6.0.alpha.1, < 9)
+      ohai (>= 8.6.0.alpha.1, < 13)
       plist (~> 3.2)
       proxifier (~> 1.0)
       rspec-core (~> 3.5)
@@ -139,13 +139,13 @@ GEM
       mixlib-cli (~> 1.4)
     artifactory (2.5.1)
     ast (2.3.0)
-    aws-sdk (2.7.0)
-      aws-sdk-resources (= 2.7.0)
-    aws-sdk-core (2.7.0)
+    aws-sdk (2.7.1)
+      aws-sdk-resources (= 2.7.1)
+    aws-sdk-core (2.7.1)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.7.0)
-      aws-sdk-core (= 2.7.0)
+    aws-sdk-resources (2.7.1)
+      aws-sdk-core (= 2.7.1)
     aws-sigv4 (1.0.0)
     backports (3.6.8)
     binding_of_caller (0.7.2)
@@ -244,7 +244,7 @@ GEM
       ffi (>= 1.0.1)
     gyoku (1.3.1)
       builder (>= 2.1.2)
-    halite (1.3.0)
+    halite (1.4.0)
       bundler
       chef (~> 12.0)
       stove (~> 4.0)
@@ -332,7 +332,7 @@ GEM
     nori (2.6.0)
     octokit (4.6.2)
       sawyer (~> 0.8.0, >= 0.5.3)
-    ohai (8.22.1)
+    ohai (8.23.0)
       chef-config (>= 12.5.0.alpha.1, < 13)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
@@ -349,7 +349,7 @@ GEM
     plist (3.2.0)
     poise (2.7.1)
       halite (~> 1.0)
-    poise-boiler (1.13.1)
+    poise-boiler (1.13.2)
       bundler
       chefspec (~> 5.0)
       codeclimate-test-reporter (~> 0.4)
@@ -373,8 +373,8 @@ GEM
       test-kitchen (~> 1.7, >= 1.7.1)
       travis (~> 1.8, >= 1.8.1)
       vagrant-wrapper
-      winrm (~> 2.0)
-      winrm-fs (~> 1.0)
+      winrm (>= 1.6, < 3)
+      winrm-fs (>= 0.4, < 2)
       yard (~> 0.8)
       yard-classmethods (~> 1.0)
     poise-profiler (1.0.1)
@@ -456,7 +456,7 @@ GEM
       rspec-its
       specinfra (~> 2.53)
     sfl (2.3)
-    simplecov (0.12.0)
+    simplecov (0.13.0)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
